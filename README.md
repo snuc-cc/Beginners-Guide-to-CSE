@@ -38,19 +38,24 @@
 - `mkdir <foldername>` creates a folder with the specified name in the current location of the terminal.
 - `mkdir -p <path_to_folder>` creates the folder in the path specified as well as all the missing folders in the path to the folder.
 
-### mv
-    - moves a file to a specified location
-    - can also be used to rename a file
-    - mv source destination
-### cp 
-    - copies files from source tp dest
-    - very similiar syntax wise to mv
-### pwd
-   - prints the path where the curerent terminal is open
-### rm 
-   - removes the files mentioned 
-   - -f to force 
-   - -r to recursively delete
+### `mv`
+- `mv <source_path> <destination_path>` moves a file from the source_path to the destination_path
+- `mv <path>/old_name <path>/new_name` will rename a file named `old_name` in the location `<path>` to `new_name`
+    
+### `cp` 
+- `cp <source_path> <destination_path>` copies a file from the source_path to the destination_path
+- `cp -r` is used to copy folders by recursively copying their contents
+    
+### `rm` 
+- `rm <file1> <file2> <file3>` deletes the files mentioned
+- **The Recycle Bin or Trash does not exist when it comes to deleting things from the terminal** so be careful with this command.
+- `rm -f <file>` force deletes the file and overrides any warnings.
+- `rm -r <folder>` recursively deletes the contents of a folder and finally deletes the folder too.
+- **UNDER NO CIRCUMSTANCE SHOULD YOU RUN ANY OF THE FOLLOWING UNLESS YOU ARE ABSOLUTELY SURE ABOUT WHAT YOU ARE DOING**
+    - `sudo rm -rf /` this will delete everything in your root directory
+    - `rm -rf ~` this will delete everything in your home directory
+- Running `rm -rf` with elevated priviliges in a dangerous location will most probably break your OS.
+- Exercise caution.
    
 ### grep
     - searches for patterns in a file or even a folder
@@ -61,3 +66,5 @@
    - lets you see the contests of a file and append to it 
    - cat file to see
    - cat >> file to append 
+## The Extras
+### `pwd`
