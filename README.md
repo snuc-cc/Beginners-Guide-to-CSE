@@ -14,21 +14,21 @@
 ### `sudo` and `su` 
 - `su` opens the current shell as root while `sudo` runs a specified command as root.
 - In Linux root priviliges are very similiar to Adminstrator priviliges in Windows
-- --Be very careful when running anything as root. It can break your system.--
+- Be very careful when running anything as root. It can break your system.--
 - It also requires the current user to know the root password as well be a part of the sudoers list
 
-## Commands
+## The Essentials
 ### `cd`
 - `cd` is used to traverse the filesystem from the terminal
 - `cd <path>` will move the terminal to the defined path
 - `cd ..` will move the terminal to the parent directory if it exists
 - `cd /` will move the terminal to the root directory
 - `cd ~` or just `cd` will move the terminal to the home directory 
-### ls
-    - lists
-    - -a shows all 
-    - -A shows almost all minus the dots
-    - -l lists the results with additional info
+### `ls`
+    - `ls` shows all the visible files and folders in directory. 
+    - `ls -a` shows all the hidden and visible files and folders in the directory.
+    - `ls -A` shows **almost** all the hidden and visible files and folders in the directory(It excludes the `.` which loops back to the current directory and the `..` which points to the parent directory)
+    - `ls -l` displays all the visible files and folders and lists them in tabular form with some extra information(like size, author, date modified, etc)
 ### touch
     - makes an empty file
 
