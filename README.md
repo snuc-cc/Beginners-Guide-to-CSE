@@ -24,17 +24,20 @@
 - `cd ..` will move the terminal to the parent directory if it exists
 - `cd /` will move the terminal to the root directory
 - `cd ~` or just `cd` will move the terminal to the home directory 
+
 ### `ls`
 - `ls` shows all the visible files and folders in directory. 
 - `ls -a` shows all the hidden and visible files and folders in the directory.
 - `ls -A` shows **almost** all the hidden and visible files and folders in the directory(It excludes the `.` which loops back to the current directory and the `..` which points to the parent directory)
 - `ls -l` displays all the visible files and folders and lists them in tabular form with some extra information(like size, author, date modified, etc)
-### `touch`
-    - Creates 
 
-### mkdir
-    - makes a folder
-    - -p to make their parents if they dont exist
+### `touch`
+- `touch <filename>` creates an empty folder with the name specified
+
+### `mkdir`
+- `mkdir <foldername>` creates a folder with the specified name in the current location of the terminal.
+- `mkdir -p <path_to_folder>` creates the folder in the path specified as well as all the missing folders in the path to the folder.
+
 ### mv
     - moves a file to a specified location
     - can also be used to rename a file
