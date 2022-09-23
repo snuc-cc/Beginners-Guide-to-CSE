@@ -57,11 +57,12 @@
 - Running `rm -rf` with elevated priviliges in a dangerous location will most probably break your OS.
 - Exercise caution.
    
-### grep
-    - searches for patterns in a file or even a folder
-    - grep <flags> 'search' files
-    - -i ignores case
-    - -r recursively searches the directory
+### `grep`
+    - `grep` is used to search the content of a specified file or durectory for a given string or a regex
+    - `grep '<search_term>' <file>` searches for the `search_term` in the `<file>`
+    - `grep -i '<search_term>' <file>` will search for the `search_term` in a case insensitive way.
+    - `grep -r '<search_term>' <folder_path>` will search for the `search_term` recursively within the specified directory.
+    
 ### cat
    - lets you see the contests of a file and append to it 
    - cat file to see
