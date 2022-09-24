@@ -58,14 +58,42 @@
 - Exercise caution.
    
 ### `grep`
-    - `grep` is used to search the content of a specified file or durectory for a given string or a regex
-    - `grep '<search_term>' <file>` searches for the `search_term` in the `<file>`
-    - `grep -i '<search_term>' <file>` will search for the `search_term` in a case insensitive way.
-    - `grep -r '<search_term>' <folder_path>` will search for the `search_term` recursively within the specified directory.
+- `grep` is used to search the content of a specified file or durectory for a given string or a regex
+- `grep '<search_term>' <file>` searches for the `search_term` in the `<file>`
+- `grep -i '<search_term>' <file>` will search for the `search_term` in a case insensitive way.
+- `grep -r '<search_term>' <folder_path>` will search for the `search_term` recursively within the specified directory.
     
-### cat
-   - lets you see the contests of a file and append to it 
-   - cat file to see
-   - cat >> file to append 
+### `cat`
+- `cat` allows the user to execute basic text modification from the terminal
+- It is not a full blown editor like Vim or Emacs but it can read and append to files
+- `cat <file>` will display the contents of the file 
+- `cat >> <file>` will allow you to enter some text into the terminal. The entered text is then appeneded to the end of the file.
+
 ## The Extras
 ### `pwd`
+- `pwd` returns the path to the active directory
+
+### `top`
+- `top` displays the processes running in real time. It also displays resource utilization and other information regarding the process.
+
+### `pkill`
+- `pkill <pattern>` kills the first processes with the string `<pattern>` in their name
+
+### `pgrep`
+- `pgrep <pattern>` returns the PID of all processes with the string `<pattern>` in their name
+
+### `kill`
+- `kill <PID>` terminates the process with the PID specified
+
+## Useful for Bash Scripting
+
+### `echo`
+- `echo "Hello, World!"` will print Hello, World! on the terminal.
+
+### `wc`
+- `wc <file>` will print the number of words in a file
+- `wc -l <file>` will print the number of lines in a file
+
+### Piping data
+- We can pass the output of one command to the inpint of another by using the `|` operator.
+- `grep -r ''`
