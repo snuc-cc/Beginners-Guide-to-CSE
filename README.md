@@ -96,4 +96,4 @@
 
 ### Piping data
 - We can pass the output of one command to the inpint of another by using the `|` operator.
-- `grep -r ''`
+- `grep -r '<search_term>' <folder_name> | wc -l` will return the number of entries that match the search
