@@ -95,5 +95,5 @@
 - `wc -l <file>` will print the number of lines in a file
 
 ### Piping data
-- We can pass the output of one command to the inpint of another by using the `|` operator.
+- We can pass the output of one command to the input of another by using the `|` operator.
 - `grep -r '<search_term>' <folder_name> | wc -l` will return the number of entries that match the search
