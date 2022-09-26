@@ -1,4 +1,3 @@
-# Linux Command Cheat Sheet
 ## The *very very useful ones*
 ### `man`
 - `man <command name>`
