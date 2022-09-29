@@ -1,4 +1,4 @@
-## The *very very useful ones*
+# The *very very useful ones*
 ### `man`
 - `man <command name>`
 - The main command returns a helpful help page that gives you a brief description of what exactly a command does and how to use it.
@@ -68,6 +68,7 @@
 - `cat <file>` will display the contents of the file 
 - `cat >> <file>` will allow you to enter some text into the terminal. The entered text is then appeneded to the end of the file.
 
+
 ## The Extras
 ### `pwd`
 - `pwd` returns the path to the active directory
@@ -96,3 +97,31 @@
 ### Piping data
 - We can pass the output of one command to the input of another by using the `|` operator.
 - `grep -r '<search_term>' <folder_name> | wc -l` will return the number of entries that match the search
+
+## SSH
+### `ssh`
+- `ssh` is program used to log into and access a machine. It was designed as a more secure replacement to `telnet`.
+- The commands that you type into your `ssh` shell terminal are excecuted on the host instead of the login shell
+- `ssh user_name@host(IP/Domain_name)` will ssh into the specified host in the user `user_name`
+
+### `scp`
+- `scp` is Secure Copy, it is mostly used to copy files over ssh. 
+- Its usage is very similar to `cp`, one key difference is that we need to mention the user and the hostname of the devices in the address.
+- `scp -r us<er1@host1:home/Documents/ user2@host2:home/target_path` will copy the contents of the `Documents` folder in `user1`'s home directory in `host1` to the home directory of `user2` in `host2host`. 
+
+## System Calls
+### `fgets`
+- `fgets()` is a system call in the `stdio.h` package.
+- `fgets()` reads in at most one less than size characters from stream and stores them into the buffer pointed to by `s`. Reading stops after an EOF or a newline. If a newline is read, it is stored into the buffer. A terminating null byte (aq\0aq) is stored after the last character in the buffer.  
+#### Example: 
+
+``` c
+#include <stdio.h>
+int main() //Program that uses fget() to accept a string from the user and print it
+{
+    char buf[10];
+    fgets(buf, 10, stdin);
+    printf("%s\n", buf);
+    return 0;
+}
+```
