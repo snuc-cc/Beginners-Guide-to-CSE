@@ -1,0 +1,10 @@
+
+*.el
+
+*.aux
+
+*.log
+
+*.out
+
+Book.pdf
