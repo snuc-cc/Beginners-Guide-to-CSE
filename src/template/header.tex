@@ -1,15 +1,67 @@
 %!TeX ts-program = xelatex
 %!TeX encoding = utf-8 Unicode
 \documentclass[11pt,a4paper]{book}
+\usepackage{FiraMono}
+
 \usepackage{geometry}
 \geometry{margin=1in}
+
 \usepackage{blindtext}
 \usepackage{hyperref}
+\usepackage{xcolor} % Required for specifying custom colours
+\definecolor{grey}{rgb}{0.9,0.9,0.9} % Colour of the box surrounding the title
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage[sfdefault]{ClearSans} % Use the Clear Sans font (sans serif)
 \providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
 \title{Handbook}
 \author{SNU Coding Club}
 
 \begin{document}
 
-\maketitle
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage} % Suppresses displaying the page number on the title page and the subsequent page counts as page 1
+
+	%------------------------------------------------
+	%	Grey title box
+	%------------------------------------------------
+
+	\colorbox{grey}{
+		\parbox[t]{0.93\textwidth}{ % Outer full width box
+			\parbox[t]{0.91\textwidth}{ % Inner box for inner right text margin
+				\raggedleft % Right align the text
+				\fontsize{50pt}{80pt}\selectfont % Title font size, the first argument is the font size and the second is the line spacing, adjust depending on title length
+				\vspace{0.7cm} % Space between the start of the title and the top of the grey box
+
+				A Simple\\
+				Collection of\\
+				Cheat Sheets\\
+
+				\vspace{0.7cm} % Space between the end of the title and the bottom of the grey box
+			}
+		}
+	}
+
+	\vfill % Space between the title box and author information
+
+	%------------------------------------------------
+	%	Author name and information
+	%------------------------------------------------
+
+	\parbox[t]{0.93\textwidth}{ % Box to inset this section slightly
+		\raggedleft % Right align the text
+		\large % Increase the font size
+		{\Large Coding Club}\\[4pt] % Extra space after name
+		SNU Chennai\\
+		% \texttt{snuchennai.edu.in}\\ Maybe add website here???
+
+		\hfill\rule{0.2\linewidth}{1pt}% Horizontal line, first argument width, second thickness
+	}
+
+\end{titlepage}
+\tableofcontents
