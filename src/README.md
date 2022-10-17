@@ -40,32 +40,46 @@ Now close the terminal, open it again you should see `(base)` in front of your t
   And so on and so forth.
 * I would arguably go with `conda` environment manager. **First**, it is more easy to use in MacOS. **Second**, it is more *robust*. Robust in sense, it is not just a `python` environment manager. It supports a variety of other languages as well (as per their official docs `Python, R, Ruby, Lua, Scala, Java, JavaScript, C/ C++, Fortran, and more`). Just a one stop solution.
 
-> let us see how to begin with environments. Open you Macbook terminal
+> let us see how to begin with environments. Open you Macbook terminal.
 
-- Create and activate environment
+#### Create and activate environment
 ```bash
 conda create --name <env-name> -y
 conda activate <env-name>
 ```
 
-- Installing packages inside environment
+#### Installing packages inside environment
 ```bash
-conda install <package-name>  #or
-pip install <package-name>
+conda install <package-name1> <package-name2> #or
+pip install <package-name1> <package-name2>
 ```
 
-- Delete environment
+#### Delete environment
 ```bash
 conda env remove --name <env-name>
 ```
 
 
-- To see the list of environments
+
+#### If you want to install all dependencies at once from a text file 
+- Now that you dont want to install all dependencies one by one. Say you got a text file *(how? more on that in a little while)* which has all your necessary dependencies like the one below,
+```
+numpy==1.23.1
+matplotlib==3.5.2
+jupyterlab==3.4.4
+pandas==1.4.4
+```
+- Unless you want a specific version of a package you dont need the version numbers above, i.e `==1.23.1` is not needed.
+
+- The above text file can be obtained by the commands in the next section.
+- After getting the text file, say you have asked your friend for his environment configuration and he sent you the text file, which has contents like above. 
+- You can create a new environment with the packages inside the text file by,
 ```bash
-conda env list
+conda install --file requirements.txt ## or
+pip install -r requirements.txt
 ```
 
-- To store the packages along with their version number
+#### To store the packages along with their version number in a text file
 ```python
 ## Pip
 pip freeze > requirements.txt 
@@ -80,10 +94,16 @@ Both serves the same purpose.
 it may end up like <br> `numpy @ file:///opt/concourse/worker/volumes/live/38d1301c-8fa9-4d2f-662e-34dddf33b183/volume/numpy_1592841668171/work` .
 Seems like an open issue with pip freeze. And we cant reporduce the environment again.
 
-So always execute the below command to change the behaviour, as a safety measure, to do the same as above 
+- So always execute the below command to change the behaviour, as a safety measure, to do the same as above 
 ```bash
 pip list --format=freeze > requirements.txt
 ```
+#### To see the list of environments
+```bash
+conda env list
+```
+
+
 
 
 ### Applications setup
