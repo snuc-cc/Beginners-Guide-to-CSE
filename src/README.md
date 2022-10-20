@@ -178,6 +178,26 @@ create_x86(){
 }
 ```
 ### git related issues
-(never mind, personal stuff)
 
+#### `ssh` issue
 `git config --global url."https://".insteadOf git://` to replace https protocol from ssh, as ssh is blocked in most of private/ public wifi firewall
+
+#### How to add large files
+- By default Github browser supports files of size 25 Mb. From local system, we can upload files of size 50 Mb.
+- Let us see how we can upload files of size more than 100 Mb.
+
+##### Install `Git Large File Storage` (LFS)
+- `brew install git-lfs`
+
+##### Setup
+- `cd` to your working directory
+- Type `git lfs install`
+- To track and upload large files with extensions, say .pdf, type `git lfs track "*.pdf"`
+- Type `git add .gitattributes` to modify your changes in `.gitattributes`, so on each repository you have locally, *large* files with extension `.pdf` will be managed by LFS.
+- Same drill - to add, commit and push files
+  * `git add .`
+  * `git commit -am "Large files committed"`
+  * `git push` 
+
+Yay.
+
