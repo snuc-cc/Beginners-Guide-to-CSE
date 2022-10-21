@@ -1,4 +1,10 @@
-# Macbook Apple Silicon setup
+---
+layout: default
+title:  "Macbook Apple Silicon setup"
+nav_order: 4
+date:   2022-10-13 00:51:58 +0530
+permalink: /Macbook/Setup
+---
 
 ### Necessary package managers
 

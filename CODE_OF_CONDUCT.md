@@ -1,4 +1,11 @@
-# Contributor Covenant Code of Conduct
+---
+layout: default
+title:  "Contributor Covenant Code of Conduct"
+nav_order: 5
+date:   2022-09-30 00:51:58 +0530
+nav_exclude: true
+permalink: /CodeOfConduct/
+---
 
 ## Our Pledge
 
