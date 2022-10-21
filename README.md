@@ -11,3 +11,13 @@ This repository consists of cheat sheets of various programming topics essential
 * **(Linux/MacOS)** After cloning, move to that directory. If you are uning Unix compliant systems like Linux or MacOS, you can provide executable permission to the `compile.sh` file by typing `chmod +x compile.sh`. And now `compile.sh` is executable.
 * You can create latest pdf version of all markdown files by running `./compile.sh` in your terminal.
 * **(Windows)** If you are using windows, you cannot execute the above commands directly in `command prompt`, you should either use *Windows subsystem for Linux* or instal *git bash for windows*. More on that a little later.
+
+## Code of Conduct
+
+- Visit [here](/CODE_OF_CONDUCT.md) to read code of conduct.
+
+## Report of bugs / new contents
+
+- If you wanted to report any bugs while compiling your markdowns, you can document it [here](/.github/ISSUE_TEMPLATE/bug_report.md).
+
+ - If anyone out there has a new idea/topic for this repository, you can propose it [here](/.github/ISSUE_TEMPLATE/content-request.md).
