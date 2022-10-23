@@ -16,8 +16,3 @@ This repository consists of cheat sheets of various programming topics essential
 
 - Visit [here](/CODE_OF_CONDUCT.md) to read code of conduct.
 
-## Report of bugs / new contents
-
-- If you wanted to report any bugs while compiling your markdowns, you can document it [here](/.github/ISSUE_TEMPLATE/bug_report.md).
-
- - If anyone out there has a new idea/topic for this repository, you can propose it [here](/.github/ISSUE_TEMPLATE/content-request.md).
