@@ -11,8 +11,3 @@ This repository consists of cheat sheets of various programming topics essential
 * **(Linux/MacOS)** After cloning, move to that directory. If you are uning Unix compliant systems like Linux or MacOS, you can provide executable permission to the `compile.sh` file by typing `chmod +x compile.sh`. And now `compile.sh` is executable.
 * You can create latest pdf version of all markdown files by running `./compile.sh` in your terminal.
 * **(Windows)** If you are using windows, you cannot execute the above commands directly in `command prompt`, you should either use *Windows subsystem for Linux* or instal *git bash for windows*. More on that a little later.
-
-## Code of Conduct
-
-- Visit [here](/CODE_OF_CONDUCT.md) to read code of conduct.
-
