@@ -3,7 +3,7 @@ This repository consists of cheat sheets of various programming topics essential
 
 ## Structure of files
 * Everything is written in Markdown files, and are available in the [src](/src) folder.
-* You can also access the pdf version of all the copiled markdowns [here](/Book.pdf).
+<!-- * You can also access the pdf version of all the copiled markdowns [here](/Book.pdf). -->
 
 ## How to use 
 * You can directly read contents from markdown files or you can clone the repository locally and compile a latest pdf version of all markdown files as a handbook and use it. 
