@@ -1,4 +1,4 @@
-# The *very very useful ones*
+# Linux Cheatsheet for Beginners
 ### `man`
 - `man <command name>`
 - The main command returns a helpful help page that gives you a brief description of what exactly a command does and how to use it.
