@@ -1,0 +1,49 @@
+\contentsline {chapter}{\numberline {1}Linux Cheat Sheet}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}The \emph {very very useful ones}}{5}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}\texttt {man}}{5}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}\texttt {-\/-help} or \texttt {-h} flag}{5}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}\texttt {sudo} and \texttt {su}}{5}{subsection.1.1.3}%
+\contentsline {section}{\numberline {1.2}The Essentials}{5}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}\texttt {cd}}{5}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}\texttt {ls}}{5}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}\texttt {touch}}{6}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}\texttt {mkdir}}{6}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}\texttt {mv}}{6}{subsection.1.2.5}%
+\contentsline {subsection}{\numberline {1.2.6}\texttt {cp}}{6}{subsection.1.2.6}%
+\contentsline {subsection}{\numberline {1.2.7}\texttt {rm}}{6}{subsection.1.2.7}%
+\contentsline {subsection}{\numberline {1.2.8}\texttt {grep}}{7}{subsection.1.2.8}%
+\contentsline {subsection}{\numberline {1.2.9}\texttt {cat}}{7}{subsection.1.2.9}%
+\contentsline {section}{\numberline {1.3}The Extras}{7}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}\texttt {pwd}}{7}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}\texttt {top}}{7}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}\texttt {pkill}}{7}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}\texttt {pgrep}}{7}{subsection.1.3.4}%
+\contentsline {subsection}{\numberline {1.3.5}\texttt {kill}}{7}{subsection.1.3.5}%
+\contentsline {section}{\numberline {1.4}Useful for Bash Scripting}{7}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}\texttt {echo}}{7}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}\texttt {wc}}{7}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Piping data}{8}{subsection.1.4.3}%
+\contentsline {chapter}{\numberline {2}Git Cheat Sheet}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}The most basic and essential commands.}{9}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Installation}{9}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Setup}{9}{subsection.2.1.2}%
+\contentsline {subsubsection}{\texttt {\ git\ config\ -\/-global\ user.email\ "yourEmail"}}{9}{section*.2}%
+\contentsline {subsubsection}{\texttt {git\ config\ -\/-global\ user.name\ "yourName"}}{9}{section*.3}%
+\contentsline {subsection}{\numberline {2.1.3}Initialisation}{9}{subsection.2.1.3}%
+\contentsline {subsubsection}{\texttt {git\ init}}{9}{section*.4}%
+\contentsline {subsubsection}{\texttt {\ git\ add\ filename.filetype}}{9}{section*.5}%
+\contentsline {subsubsection}{\texttt {\ git\ status}}{9}{section*.6}%
+\contentsline {subsubsection}{\texttt {\ git\ commit}}{9}{section*.7}%
+\contentsline {subsubsection}{\texttt {\ git\ log}}{10}{section*.8}%
+\contentsline {subsection}{\numberline {2.1.4}How to ignore files in git}{10}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Roll back to a older or a specific version}{10}{subsection.2.1.5}%
+\contentsline {subsubsection}{\texttt {\ git\ revert\ commit\_ID}}{10}{section*.9}%
+\contentsline {subsection}{\numberline {2.1.6}Branches in git}{10}{subsection.2.1.6}%
+\contentsline {subsubsection}{\texttt {\ git\ branch\ branchName}}{10}{section*.10}%
+\contentsline {subsubsection}{\texttt {\ git\ checkout\ branchName}}{10}{section*.11}%
+\contentsline {subsubsection}{\texttt {git\ merge\ brancName}}{10}{section*.12}%
+\contentsline {subsection}{\numberline {2.1.7}How to add and work on a remote repository in Git}{10}{subsection.2.1.7}%
+\contentsline {subsubsection}{\texttt {git\ remote\ add\ origin\ https://repo\_here}}{10}{section*.13}%
+\contentsline {subsubsection}{\texttt {git\ clone\ https://remote\_repo\_url}}{10}{section*.14}%
+\contentsline {subsubsection}{\texttt {\ git\ push}}{10}{section*.15}%
+\contentsline {subsubsection}{\texttt {git\ pull}}{10}{section*.16}%
