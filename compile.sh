@@ -1,7 +1,9 @@
 #!/usr/bin/bash
-HEADER=src/template/header.tex
-FOOTER=src/template/footer.tex
+HEADER=../src/template/header.tex
+FOOTER=../src/template/footer.tex
 FINAL_FILE=Book
+mkdir pdf
+cd pdf
 touch $FINAL_FILE.tex
 cat "$HEADER" >> $FINAL_FILE.tex
 pandoc -f gfm  -t latex --top-level-division=chapter src/*.md >> $FINAL_FILE.tex
