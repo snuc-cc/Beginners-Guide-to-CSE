@@ -1,20 +1,24 @@
-# The *very very useful ones*
+# Linux Cheat Sheet for Beginners
+![wallpaperflare com_wallpaper(1)](https://user-images.githubusercontent.com/96528048/204434186-3f7bae4c-b0dd-46fc-8fa9-5283a148a530.jpg)
+
+## Most Essential Commands
 ### `man`
-- `man <command name>`
-- The main command returns a helpful help page that gives you a brief description of what exactly a command does and how to use it.
-- In case that man doesn't work, make sure that you have `mandocs` or `man` installed.
-- The manual entries can also be accessed via a browser.
+- The `man` Command returns the Documentation of the Requested Command.
+- `man <command_name>`
+- Example: `man ls`
+- Returns the Documentation of the `ls` Command.
 
 ### `--help` or `-h` flag
- - Sometimes a command is too niche to warrant a page in the manual. In such cases you can use the help flags. There is no set standard but they're usually one of the two
- - `<command> --help` or `<command> -h`
- - If one doesn't work, try the other.
+- A Flag is used in Conjunction with a Command  `gcc --help` or `gcc -h`
+- Using this flag returns a Help Page which contains Functions relating to the Command
+- Example: `gcc --help`
+- Returns the Useful Functions of `gcc`
  
 ### `sudo` and `su` 
-- `su` opens the current shell as root while `sudo` runs a specified command as root.
-- In Linux root priviliges are very similiar to Adminstrator priviliges in Windows
-- Be very careful when running anything as root. It can break your system.--
-- It also requires the current user to know the root password as well be a part of the sudoers list
+- `sudo` is a Package in GNU/Linux used for Creating Normal Users in Linux. Similar to users in Windows. 
+- There are two types of Users in GNU/Linux `Standard User` and `Admin | Root`
+- While installing or executing some Commands You'll need `Admin | Root Access` executing the Command with `sudo` provides you temporary `Admin | Root` access.
+- `su` is the command which allows you to be root. If you have lots of things to do as `Root | Admin` and you are too lazy to type `sudo` every time, you can use `su` to gain root access for a longer time (Until you close the Terminal Windows in which you used the `su` command)
 
 ## The Essentials
 ### `cd`
