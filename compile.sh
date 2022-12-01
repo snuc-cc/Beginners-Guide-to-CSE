@@ -2,8 +2,8 @@
 
 ## Environmental Variables
 
-HEADER=/src/template/header.tex
-FOOTER=/src/template/footer.tex
+HEADER=src/template/header.tex
+FOOTER=src/template/footer.tex
 FINAL_FILE=Book
 
 # Creating the TEX File
