@@ -2,22 +2,16 @@
 
 ## Environmental Variables
 
-HEADER=../src/template/header.tex
-FOOTER=../src/template/footer.tex
+HEADER=src/template/header.tex
+FOOTER=src/template/footer.tex
 FINAL_FILE=Book
-
-## Process
-
-# Output Folder
-mkdir pdf
-cd pdf
 
 # Creating the TEX File
 touch $FINAL_FILE.tex
 
 # Adding the Header, Body and the Footer to the .tex Filei
 cat "$HEADER" >> $FINAL_FILE.tex
-pandoc -f gfm  -t latex --top-level-division=chapter ../src/*.md >> $FINAL_FILE.tex
+pandoc -f gfm  -t latex --top-level-division=chapter src/*.md >> $FINAL_FILE.tex
 cat "$FOOTER" >> $FINAL_FILE.tex
 
 # Converting the .tex File to .pdf using pdflatex
